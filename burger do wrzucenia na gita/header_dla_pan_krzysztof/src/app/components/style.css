@@ -1,0 +1,203 @@
+.linia{
+    width: 100vw;
+    height: 1px;
+    background-color: gray;
+    @media screen and (max-width: 767px) {
+        display: none;
+      }
+}
+.wszystko{ 
+    /* background-color: pink; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    }
+.duzy{
+    width: 75vw;
+    min-height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: aqua; */
+    flex-wrap: wrap;
+    @media screen and (max-width: 767px) {
+        justify-content: start;
+        width: 100vw;
+        flex-direction: column;
+        align-items: start;
+       
+      }
+    
+}
+.lewy, .prawy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 40px;
+    /* background-color: antiquewhite; */
+    gap: 15px;
+}
+.lewy{
+    @media screen and (max-width: 767px) {
+        margin-bottom: 10px;
+       
+      }
+}
+
+.zaloguj{
+    border-left: 1px black solid;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+    @media screen and (max-width: 767px) {
+        border: none;
+        padding-left: 0;
+      }
+}
+.zaloz{
+    padding-right: 10px;
+    padding-left: 10px;
+    border-left: 1px black solid;
+    border-right: 1px black solid;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media screen and (max-width: 767px) {
+        border-right: none;
+      }
+}
+.s_duzy{
+    width: 75vw;
+    min-height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: aqua; */
+    flex-wrap: wrap;
+}
+.s_logo{
+    width: 100px;
+    height: 50px;
+    background-color: brown;
+}
+input{
+    width: 40vw;
+    background-color: transparent;
+    border: transparent 0px;
+    border-bottom: black 1px solid;
+    color: black;
+}
+input:focus{
+    background-color: transparent;
+    outline: none;
+    border-bottom: palevioletred 1px solid;
+    transition: 0.2s;
+}
+
+.d_duzy{
+    width: 75vw;
+    min-height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: aqua; */
+    flex-wrap: wrap;
+    @media screen and (max-width: 767px) {
+        flex-direction: column;
+        display: block;
+      }
+    
+}
+.hamburger {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    
+}
+.dolewej{
+    justify-content: flex-start;
+    display: flex;
+    align-items: center;
+}
+.dropdownButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #0c0c0c;
+    margin-top:10px ;
+  }
+  
+  .dropdownMenu {
+    
+    position: absolute; 
+    background-color: #fc96b0; 
+    min-width: 160px; 
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+    z-index: 1; 
+    
+    
+}
+.calyburger{
+    
+    width: 100% !important;
+    height: 100%;
+    z-index: 10 !important;
+}
+
+.s_wszystko{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    z-index: 100;
+}
+.navbar{
+    position: absolute;
+    width: 80vw;
+    background-color: #fdb5c7;
+    height: 100vh;
+
+    left: -100px;
+    -webkit-animation: slide 0.5s forwards;
+    -webkit-animation-delay: 0s;
+    animation: slide 0.5s forwards;
+    animation-delay: 0s;
+}
+@-webkit-keyframes slide {
+    100% { left: 0; }
+}
+
+@keyframes slide {
+    100% { left: 0; }
+}
+.k_duzy{
+    /* background-color: aqua; */
+    flex-wrap: wrap;
+    width: 75vw;
+    height: 10vh;
+    flex-direction: row;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+p:hover{
+    color: palevioletred;
+    transition: 0.2s;
+    cursor: pointer;
+}
+p{
+    display: flex;
+    align-items: center;
+}
+img{
+    width: 100%;
+  height: auto;
+}
